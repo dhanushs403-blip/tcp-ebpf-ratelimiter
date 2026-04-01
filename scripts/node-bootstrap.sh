@@ -3,7 +3,7 @@ set -e
 
 BPFFS="/sys/fs/bpf/vishanti"
 NIC="bond0"
-OBJ_DIR="/root/tenants/ebpfrl1/ebpf-phase1/obj"
+OBJ_DIR="/root/tcp-ebpf-ratelimiter/obj"
 
 echo ""
 echo "============================================================"

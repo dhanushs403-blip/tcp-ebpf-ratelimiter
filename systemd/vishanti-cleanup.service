@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 Environment=KUBECONFIG=/etc/kubernetes/admin.conf
 Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin
-ExecStart=/root/tenants/ebpfrl1/ebpf-phase1/conn-cleanup.sh
+ExecStart=/root/tcp-ebpf-ratelimiter/conn-cleanup.sh
 Restart=always
 RestartSec=10
 
