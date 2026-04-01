@@ -1,0 +1,14 @@
+[Unit]
+Description=Vishanti eBPF Connection Counter Cleanup
+After=network.target
+
+[Service]
+Type=simple
+Environment=KUBECONFIG=/etc/kubernetes/admin.conf
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin
+ExecStart=/root/tenants/ebpfrl1/ebpf-phase1/conn-cleanup.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
